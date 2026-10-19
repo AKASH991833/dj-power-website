@@ -200,3 +200,5 @@ html[data-theme="light"] .wa-form input[type="date"]{color-scheme:light}
 /* light-mode contrast fixes */
 html[data-theme="light"] .btn-wa{background:rgba(37,211,102,.16);color:#0a7a3c;border-color:rgba(10,122,60,.55)}
 html[data-theme="light"] .btn-wa:hover{background:rgba(37,211,102,.3)}
+html[data-theme="light"] .hero .btn-wa{background:rgba(37,211,102,.16);color:#7dffab;border-color:rgba(37,211,102,.45)}
+html[data-theme="light"] .hero .btn-wa:hover{background:rgba(37,211,102,.28)}

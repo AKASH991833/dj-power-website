@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>DJ POWER — Azamgarh | Shaadi, Birthday, Har Function</title>
-<meta name="description" content="DJ POWER — Azamgarh ka dhamakedar DJ. Shaadi, birthday, har function ke liye booking. One call booking: 9648924137.">
+<meta name="description" content="DJ POWER — Azamgarh ka dhamakedar DJ. Shaadi, barat rath, puja, birthday, har function. One call booking: 9648924137 / 9918331262.">
 <meta name="theme-color" content="#0b0b0e">
 <meta property="og:title" content="DJ POWER — Azamgarh ka Dhamakedar DJ">
 <meta property="og:description" content="Shaadi, birthday, har function. One call booking: 9648924137">
@@ -14,21 +14,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
 <canvas id="bgfx" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
 <div class="grain" aria-hidden="true"></div>
+<div class="spot" id="spot" aria-hidden="true"></div>
 
-<header class="topbar">
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="topbar" id="topbar">
   <a class="brand" href="#top">DJ&nbsp;POWER</a>
-  <nav class="topnav">
+  <nav class="topnav" id="topnav">
     <a href="#setup">Setup</a>
-    <a href="#functions">Functions</a>
+    <a href="#functions">Services</a>
+    <a href="#why">Why us</a>
     <a href="#gallery">Gallery</a>
-    <a href="#booking">Booking</a>
+    <a href="#faq">FAQ</a>
+    <a class="nav-cta" href="#booking">Book</a>
   </nav>
+  <button id="menuBtn" class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   <button id="themeToggle" class="theme-btn" aria-label="Toggle dark / light mode">☀️</button>
 </header>
 
@@ -38,6 +44,7 @@
   <section class="hero">
     <div class="hero-bg" role="img" aria-label="DJ POWER ka asli setup"></div>
     <div class="hero-shade"></div>
+    <div class="beams" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
     <div class="hero-content">
       <p class="hero-badge reveal"><span class="pulse-dot"></span> AZAMGARH • UTTAR PRADESH</p>
       <h1 class="hero-title">
@@ -45,6 +52,7 @@
         <span class="line outline reveal">POWER</span>
       </h1>
       <p class="hero-tag reveal">आज़मगढ़ का धमाकेदार डीजे</p>
+      <p class="hero-rotor reveal" aria-live="polite"><span id="rotor">Shaadi</span></p>
       <p class="hero-sub reveal">Shaadi, barat rath, puja, birthday — har function, full power sound &amp; lights.<br>Booking? <strong>Sirf one call.</strong></p>
       <div class="hero-cta reveal">
         <a class="btn btn-call" href="tel:+919648924137">
@@ -88,55 +96,37 @@
 
   <!-- FUNCTIONS -->
   <section id="functions" class="section">
-    <p class="kicker reveal">KAUN KAUN SE FUNCTION?</p>
+    <p class="kicker reveal">SERVICES EXPLORER</p>
     <h2 class="h2 reveal">Har Function, Full Power</h2>
-    <div class="cards">
-      <article class="card reveal">
-        <div class="card-img"><img src="img/umbrellas.jpg" alt="Decorated umbrellas for a wedding procession" loading="lazy"></div>
-        <div class="card-body">
-          <h3>Shaadi &amp; Barat</h3>
-          <p>Shaadi ka sabse bada celebration — dhamakedar sound aur lights ke saath, ekdam yaadgar.</p>
+    <p class="section-sub reveal">Apna function chuno — details dekho aur seedha booking karo.</p>
+    <div class="chips reveal" id="chips" role="tablist" aria-label="Services"></div>
+    <div class="explorer reveal" id="explorer">
+      <div class="ex-media" id="exMedia"><img id="exImg" src="img/umbrellas.jpg" alt=""><div class="ex-emoji" id="exEmoji" aria-hidden="true">🎆</div></div>
+      <div class="ex-body">
+        <p class="ex-tag" id="exTag"></p>
+        <h3 id="exTitle"></h3>
+        <p id="exText"></p>
+        <div class="ex-cta">
+          <button class="btn btn-call" id="exBook" type="button"><span class="btn-ico">🎯</span> Is function ke liye book karo</button>
+          <a class="btn btn-wa ghost" id="exWa" href="#" target="_blank" rel="noopener"><span class="btn-ico">💬</span> WhatsApp</a>
         </div>
-      </article>
-      <article class="card reveal">
-        <div class="card-img"><img src="img/rath.jpg" alt="Lit up rath with horse figures at night" loading="lazy"></div>
-        <div class="card-body">
-          <h3>Barat ka Rath</h3>
-          <p>Road rath jispar dulha baithta hai — barat ka full shaan wala look.</p>
-        </div>
-      </article>
-      <article class="card reveal">
-        <div class="card-img card-emoji" aria-hidden="true">🎆</div>
-        <div class="card-body">
-          <h3>Patakhe (order par)</h3>
-          <p>Barat me jo patakhe phutte hain, wo bhi order par manage karwa diye jate hain.</p>
-        </div>
-      </article>
-      <article class="card reveal">
-        <div class="card-img"><img src="img/pandal-idol.jpg" alt="Puja pandal lit up at night" loading="lazy"></div>
-        <div class="card-body">
-          <h3>Navratri · Lakshmi Puja · Diwali · Visarjan</h3>
-          <p>Puja, jagran aur visarjan — sound aur lights ka poora intezaam.</p>
-        </div>
-      </article>
-      <article class="card reveal">
-        <div class="card-img"><img src="img/night-glow.jpg" alt="DJ POWER lights rig glowing at night" loading="lazy"></div>
-        <div class="card-body">
-          <h3>Birthday · Ramayan · Aur programs</h3>
-          <p>Birthday ho ya Ramayan path, koi bhi program — jahan DJ chahiye, DJ POWER wahan.</p>
-        </div>
-      </article>
-      <article class="card reveal">
-        <div class="card-img"><img src="img/pickup.jpg" alt="White pickup gadi" loading="lazy"></div>
-        <div class="card-body">
-          <h3>Pickup Gadi (bhade ke liye)</h3>
-          <p>Pickup gadi bhade ke liye bhi book hoti hai.</p>
-        </div>
-      </article>
+      </div>
     </div>
   </section>
 
-  <!-- GALLERY -->
+  <!-- WHY US -->
+  <section id="why" class="section">
+    <p class="kicker reveal">WHY DJ POWER</p>
+    <h2 class="h2 reveal">Ek hi jagah, sab kuch</h2>
+    <div class="why-grid">
+      <div class="why reveal"><span class="why-ico">🔊</span><h3>Apna asli setup</h3><p>Sound aur lights ka DJ POWER ka apna setup — gallery me sab asli photos hain.</p></div>
+      <div class="why reveal"><span class="why-ico">📞</span><h3>One call booking</h3><p>Bas ek call ya WhatsApp. Date aur function batao, baaki hum dekh lenge.</p></div>
+      <div class="why reveal"><span class="why-ico">🐎</span><h3>Rath se patakhe tak</h3><p>Barat ka rath, patakhe (order par) aur pickup gadi bhade ke liye — sab ek hi jagah.</p></div>
+      <div class="why reveal"><span class="why-ico">📍</span><h3>Azamgarh se</h3><p>Yusufpur Khanpur, Post Sikraur, Shabari, Azamgarh (UP).</p></div>
+    </div>
+  </section>
+
+<!-- GALLERY -->
   <section id="gallery" class="section">
     <p class="kicker reveal">GALLERY</p>
     <h2 class="h2 reveal">Kaam Bolta Hai</h2>
@@ -153,6 +143,20 @@
       <img class="reveal" src="img/night-glow.jpg" alt="Rig glowing at night" loading="lazy">
       <img class="reveal" src="img/pickup.jpg" alt="Pickup gadi" loading="lazy">
       <img class="reveal" src="img/front-lights.jpg" alt="Setup front with lights" loading="lazy">
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <p class="kicker reveal">FAQ</p>
+    <h2 class="h2 reveal">Aksar puchhe jaane wale sawal</h2>
+    <div class="faq">
+      <details class="reveal"><summary>Kaun kaun se function karte ho?</summary><p>Shaadi aur barat, birthday, Navratri, Lakshmi Puja, Diwali, Visarjan, Ramayan aur baaki programs.</p></details>
+      <details class="reveal"><summary>Barat ka rath milta hai?</summary><p>Haan, road rath jispar dulha baithta hai, wo bhi hota hai.</p></details>
+      <details class="reveal"><summary>Patakhe ka intezaam hota hai?</summary><p>Barat me jo patakhe phutte hain, wo bhi order par manage karwa diye jate hain.</p></details>
+      <details class="reveal"><summary>Pickup gadi bhade pe milti hai?</summary><p>Haan, pickup gadi bhade ke liye book hoti hai.</p></details>
+      <details class="reveal"><summary>Booking kaise karein?</summary><p>Call karo 96489 24137 ya 99183 31262, ya neeche ka form bharke WhatsApp pe details bhejo. Baaki details call pe confirm hoti hain.</p></details>
+      <details class="reveal"><summary>Aap kahan ke ho?</summary><p>Azamgarh (UP) — Yusufpur Khanpur, Post Sikraur, Shabari.</p></details>
     </div>
   </section>
 
@@ -189,14 +193,18 @@
         <label>Function
           <select id="fType">
             <option>Shaadi</option>
-            <option>Birthday</option>
             <option>Barat / Rath</option>
-            <option>Puja / Jagran / Visarjan</option>
-            <option>Other function</option>
+            <option>Patakhe (order par)</option>
+            <option>Navratri / Lakshmi Puja / Diwali / Visarjan</option>
+            <option>Birthday / Ramayan / Other program</option>
+            <option>Pickup gadi (bhade ke liye)</option>
           </select>
         </label>
         <label>Venue / jagah
           <input type="text" id="fVenue" placeholder="Venue ya gaon/shahar">
+        </label>
+        <label>Kis number pe bhejna hai
+          <select id="fNum"><option value="919648924137">96489 24137</option><option value="919918331262">99183 31262</option></select>
         </label>
         <button type="submit" class="btn btn-wa big">
           <span class="btn-ico">💬</span> Send on WhatsApp
@@ -228,6 +236,12 @@
   <span class="fc-ico">📞</span><span class="fc-text">Call to Book</span>
 </a>
 
-<script src="app.js?v=6"></script>
+<div class="lb" id="lb" hidden>
+  <button class="lb-x" id="lbX" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+</div>
+<script src="app.js?v=7"></script>
 </body>
 </html>

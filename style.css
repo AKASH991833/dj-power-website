@@ -202,3 +202,14 @@ html[data-theme="light"] .btn-wa{background:rgba(37,211,102,.16);color:#0a7a3c;b
 html[data-theme="light"] .btn-wa:hover{background:rgba(37,211,102,.3)}
 html[data-theme="light"] .hero .btn-wa{background:rgba(37,211,102,.16);color:#7dffab;border-color:rgba(37,211,102,.45)}
 html[data-theme="light"] .hero .btn-wa:hover{background:rgba(37,211,102,.28)}
+
+/* v6 additions */
+.hero-nums{display:flex;gap:10px 22px;flex-wrap:wrap}
+.hero-nums .hero-num{margin-top:22px}
+.card-emoji{display:flex;align-items:center;justify-content:center;font-size:4.5rem;background:radial-gradient(circle at 50% 40%,rgba(255,122,24,.35),rgba(255,59,48,.12) 70%)}
+.call-stack{display:flex;flex-direction:column;gap:16px}
+.call-stack .call-card:first-child{flex:1}
+.call-card-2{padding:18px 20px;gap:6px}
+.call-card-2 .call-num{font-size:clamp(1.4rem,5vw,1.9rem)}
+.wa-alt{color:var(--orange);text-decoration:underline;margin-left:4px}
+@media(min-width:761px){.cards{grid-template-columns:repeat(3,1fr)}}

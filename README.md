@@ -4,7 +4,7 @@
 
 Live site: **https://akash991833.github.io/dj-power-website/**
 
-A premium, Gen-Z style one-page website for DJ POWER (Azamgarh, Uttar Pradesh) — shaadi, birthday, har function. Dark-first immersive design with real photos of the actual DJ POWER setup, and a one-tap **Call to Book** booking system.
+A premium, Gen-Z style one-page website for DJ POWER (Azamgarh, Uttar Pradesh) — shaadi, barat rath, puja/jagran, birthday, har function. Dark-first immersive design with real photos of the actual DJ POWER setup, and a one-tap **Call to Book** booking system.
 
 ## Features
 

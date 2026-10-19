@@ -120,8 +120,8 @@
     { k: 'Barat ka Rath', type: 'Barat / Rath', img: 'rath', tag: 'ROAD RATH', t: 'Barat ka Rath', d: 'Road rath jispar dulha baithta hai — barat ka full shaan wala look.' },
     { k: 'Patakhe', type: 'Patakhe (order par)', img: '', tag: 'ORDER PAR', t: 'Patakhe', d: 'Barat me jo patakhe phutte hain, wo bhi order par manage karwa diye jate hain.' },
     { k: 'Navratri · Puja · Diwali · Visarjan', type: 'Navratri / Lakshmi Puja / Diwali / Visarjan', img: 'pandal-idol', tag: 'FESTIVALS', t: 'Navratri, Lakshmi Puja, Diwali, Visarjan', d: 'Puja, jagran aur visarjan — sound aur lights ka poora intezaam.' },
-    { k: 'Birthday · Ramayan', type: 'Birthday / Ramayan / Other program', img: 'night-glow', tag: 'PROGRAMS', t: 'Birthday, Ramayan aur baaki programs', d: 'Birthday ho ya Ramayan path, koi bhi program — jahan DJ chahiye, DJ POWER wahan.' },
-    { k: 'Pickup Gadi', type: 'Pickup gadi (bhade ke liye)', img: 'pickup', tag: 'BHADE PE', t: 'Pickup gadi bhade ke liye', d: 'Pickup gadi bhade ke liye bhi book hoti hai.' }
+    { k: 'Birthday · Ramayan', type: 'Birthday / Ramayan / Other program', img: 'hero-night', tag: 'PROGRAMS', t: 'Birthday, Ramayan aur baaki programs', d: 'Birthday ho ya Ramayan path, koi bhi program — jahan DJ chahiye, DJ POWER wahan.' },
+    { k: 'Pickup Gadi', type: 'Pickup gadi (bhade ke liye)', img: 'front-lights', tag: 'BHADE PE', t: 'Pickup gadi bhade ke liye', d: 'Pickup gadi bhade ke liye bhi book hoti hai.' }
   ];
   var chips = document.getElementById('chips'), exImg = document.getElementById('exImg'), exMedia = document.getElementById('exMedia');
   var cur = 0;

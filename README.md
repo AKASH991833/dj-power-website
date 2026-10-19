@@ -23,7 +23,7 @@ Plain HTML/CSS/JS — no frameworks, no build step.
 - `index.html` — single page (Setup, Functions, Gallery, Booking sections)
 - `style.css` — theme system, animations
 - `app.js` — particles, reveals, theme toggle, WhatsApp form
-- `hero.jpg`, `setup-full.jpg`, `street.jpg`, `console.jpg`, `party.jpg`, `stage.jpg` — photos of the real DJ POWER setup
+- `img/` — real photos of the DJ POWER setup, taken from the public @dj____power Instagram page
 
 ## Booking flow
 

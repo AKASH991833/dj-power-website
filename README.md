@@ -10,8 +10,13 @@ A premium, Gen-Z style one-page website for DJ POWER (Azamgarh, Uttar Pradesh) �
 
 - **One Call Booking** — floating "Call to Book" button + tap-to-call card (`tel:`) so customers reach DJ POWER in one tap
 - **WhatsApp booking form** — name, date, function type, venue → opens WhatsApp with a ready-made booking message (free, no backend)
+- **Services explorer** — tap a service (shaadi/barat, rath, patakhe, festivals, birthday/Ramayan, pickup gadi) to see details and jump to booking with that function pre-selected
+- **Gallery lightbox** — tap a photo for full screen, swipe/arrow keys to browse
+- **Why us + FAQ** — only facts DJ POWER gave, no prices or claims
+- **Two numbers** — 96489 24137 and 99183 31262, call or WhatsApp
+- **Sticky nav** with scroll progress, active section, mobile menu
 - **Dark + Light mode** — full theme toggle, saved across visits
-- **Immersive Gen-Z look** — canvas particles, film grain, animated EQ bars, marquee, scroll reveals, Unbounded + Space Grotesk type
+- **Immersive Gen-Z look** — neon red/orange/pink/violet palette, aurora glow, moving light beams, canvas particles, film grain, animated EQ bars, marquee, scroll reveals, Unbounded + Space Grotesk type
 - **Real photos** — hero and gallery use actual photos of the DJ POWER setup
 - **Mobile + desktop** — fully responsive, designed mobile-first
 - **Free hosting** — static site on GitHub Pages, no server, no cost
@@ -20,7 +25,7 @@ A premium, Gen-Z style one-page website for DJ POWER (Azamgarh, Uttar Pradesh) �
 
 Plain HTML/CSS/JS — no frameworks, no build step.
 
-- `index.html` — single page (Setup, Functions, Gallery, Booking sections)
+- `index.html` — single page (Setup, Services, Why us, Gallery, FAQ, Booking)
 - `style.css` — theme system, animations
 - `app.js` — particles, reveals, theme toggle, WhatsApp form
 - `img/` — real photos of the DJ POWER setup, taken from the public @dj____power Instagram page
@@ -34,6 +39,7 @@ Plain HTML/CSS/JS — no frameworks, no build step.
 
 ### Desktop
 ![Desktop hero](screenshots/desktop-hero.png)
+![Desktop services explorer](screenshots/desktop-services.png)
 ![Desktop booking](screenshots/desktop-booking.png)
 
 ### Mobile

@@ -204,7 +204,7 @@ html[data-theme="light"] .hero .btn-wa{background:rgba(37,211,102,.16);color:#7d
 html[data-theme="light"] .hero .btn-wa:hover{background:rgba(37,211,102,.28)}
 
 /* v6 additions */
-.hero-nums{display:flex;gap:10px 22px;flex-wrap:wrap}
+.hero-nums{display:flex;gap:4px 26px;flex-wrap:wrap;justify-content:center}
 .hero-nums .hero-num{margin-top:22px}
 .card-emoji{display:flex;align-items:center;justify-content:center;font-size:4.5rem;background:radial-gradient(circle at 50% 40%,rgba(255,122,24,.35),rgba(255,59,48,.12) 70%)}
 .call-stack{display:flex;flex-direction:column;gap:16px}
@@ -331,3 +331,6 @@ html[data-theme="light"] .aurora i{opacity:.16}
 .float-call{background:var(--neon);color:#fff;box-shadow:0 14px 40px rgba(255,45,122,.5)}
 .call-ring{border-color:rgba(255,255,255,.4)}
 .wa-form select#fNum{margin-top:0}
+.booking-grid>*{min-width:0}
+.wa-form select,.wa-form input{width:100%;min-width:0;max-width:100%;text-overflow:ellipsis}
+.wa-form{min-width:0}
